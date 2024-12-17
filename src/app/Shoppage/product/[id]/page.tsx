@@ -20,13 +20,6 @@ const ProductDetail = ({ params }: ProductPageProps) => {
   const [quantity, setQuantity] = useState(1);
 
 
-
-
-
-  if (!product) {
-    return <p className="text-center text-gray-600">Product not found</p>;
-  }
-
   const handleQuantityChange = (type: "increase" | "decrease") => {
     setQuantity((prev) => (type === "increase" ? prev + 1 : Math.max(prev - 1, 1)));
   };
@@ -42,11 +35,14 @@ const ProductDetail = ({ params }: ProductPageProps) => {
     ...Array(emptyStars).fill("empty"),
   ];
 
-  const [activeTab, setActiveTab] = useState('description');
 
   const handleTabClick = (tab: SetStateAction<string>) => {
     setActiveTab(tab);
   };
+
+  if (!product) {
+    return <p className="text-center text-gray-600">Product not found</p>;
+  }
 
 
   return (
