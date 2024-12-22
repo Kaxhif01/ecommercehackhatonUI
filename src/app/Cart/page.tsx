@@ -21,7 +21,7 @@ const CartPage = () => {
           {/* Header Row: Product, Type, Quantity, Subtotal */}
           <div className="flex justify-between text-lg font-poppins font-medium bg-[#FFF9E5] py-3 text-black mb-4">
             <div className="w-1/4 text-center max-sm:text-sm">Product</div>
-            <div className="w-1/4 text-center max-sm:text-sm">Type</div>
+            <div className="w-1/4 text-center max-sm:text-sm">Price</div>
             <div className="w-1/4 text-center max-sm:text-sm">Quantity</div>
             <div className="w-1/4 text-center max-sm:text-sm">Subtotal</div>
           </div>
@@ -30,7 +30,7 @@ const CartPage = () => {
           <div className="flex justify-between items-center mb-4 pt-8 o max-soverflow-x-scroll">
             {/* Product */}
             <div className="w-1/4 flex items-center justify-center">
-              <img src="./images/Arrivals.png" alt="Asgaard sofa" className="w-16 h-16 mr-4" />
+              <img src="./images/arrivals.png" alt="Asgaard sofa" className="w-16 h-16 mr-4" />
               <span className="text-black font-poppins font-medium max-sm:text-sm">Asgaard sofa</span>
             </div>
 
@@ -40,7 +40,7 @@ const CartPage = () => {
             </div>
 
             {/* Quantity */}
-            <div className="w-1/4 ml-4 flex justify-center text-center max-sm:w-6">
+            <div className="w-1/4 ml-3 flex justify-center text-center max-sm:w-6">
               <div className="bg-white border border-gray-300 rounded-md w-12 py-1">
                 <span className="text-black font-poppins">1</span>
               </div>
