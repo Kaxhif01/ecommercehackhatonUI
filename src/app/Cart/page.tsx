@@ -20,10 +20,10 @@ const CartPage = () => {
         <div className="lg:col-span-2 bg-white p-4">
           {/* Header Row: Product, Type, Quantity, Subtotal */}
           <div className="flex justify-between text-lg font-poppins font-medium bg-[#FFF9E5] py-3 text-black mb-4">
-            <div className="w-1/4 text-center">Product</div>
-            <div className="w-1/4 text-center">Type</div>
-            <div className="w-1/4 text-center">Quantity</div>
-            <div className="w-1/4 text-center">Subtotal</div>
+            <div className="w-1/4 text-center max-sm:text-sm">Product</div>
+            <div className="w-1/4 text-center max-sm:text-sm">Type</div>
+            <div className="w-1/4 text-center max-sm:text-sm">Quantity</div>
+            <div className="w-1/4 text-center max-sm:text-sm">Subtotal</div>
           </div>
 
           {/* Cart Item Details */}
