@@ -29,14 +29,14 @@ const CartPage = () => {
           {/* Cart Item Details */}
           <div className="flex justify-between items-center mb-4 pt-8 o max-soverflow-x-scroll">
             {/* Product */}
-            <div className="w-1/4 flex items-center justify-center">
+            <div className="w-1/4 flex flex-wrap items-center justify-center flex-col">
               <img src="./images/arrivals.png" alt="Asgaard sofa" className="w-16 h-16 mr-4" />
-              <span className="text-black font-poppins font-medium max-sm:text-sm">Asgaard sofa</span>
+              <span className="text-black font-poppins font-medium max-sm:text-xs">Asgaard sofa</span>
             </div>
 
             {/* Price */}
             <div className="w-1/4 text-center">
-              <span className="text-black font-poppins text-xl max-sm:text-sm">Rs. 250,000.00</span>
+              <span className="text-black font-poppins text-xl max-sm:text-xs">Rs. 250,000.00</span>
             </div>
 
             {/* Quantity */}
@@ -48,7 +48,7 @@ const CartPage = () => {
 
             {/* Subtotal */}
             <div className="w-1/4 text-center">
-              <span className="text-black font-poppins text-xl max-sm:text-sm">Rs. 250,000.00</span>
+              <span className="text-black font-poppins text-xl max-sm:text-xs">Rs. 250,000.00</span>
             </div>
           </div>
         </div>

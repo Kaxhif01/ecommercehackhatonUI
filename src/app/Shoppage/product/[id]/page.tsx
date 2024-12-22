@@ -173,10 +173,10 @@ const ProductDetail = ({ params }: ProductPageProps) => {
         </div>
       </div>
 
-      <div className="border-t border-gray-300"></div>
+      <div className="border-t border-gray-300 my-2"></div>
 
       <div className="mt-16">
-        <div className="flex justify-center gap-8 pb-2">
+        <div className="flex flex-wrap justify-center gap-8 pb-2">
           {[
             { label: "Description", key: "description" },
             { label: "Additional Information", key: "additionalInfo" },
