@@ -23,7 +23,10 @@ const Shoppage = () => {
   const indexOfFirstProduct = indexOfLastProduct - ITEMS_PER_PAGE;
 
   // Slice the products array to get only the products for the current page
-  const currentProducts = products.slice(indexOfFirstProduct, indexOfLastProduct);
+  const currentProducts = products.slice(
+    indexOfFirstProduct,
+    indexOfLastProduct
+  );
 
   // Calculate total number of pages
   const totalPages = Math.ceil(products.length / ITEMS_PER_PAGE);
@@ -80,11 +83,11 @@ const Shoppage = () => {
         </div>
 
         {/* Pagination Section */}
-        <div className="flex justify-center mt-12 space-x-4">
+        <div className="flex flex-wrap justify-center mt-12 space-x-2 sm:space-x-4">
           {/* Previous Button */}
           <button
             onClick={handlePrevClick}
-            className={`px-4 py-2 rounded ${
+            className={`px-3 py-1 sm:px-4 sm:py-2 rounded ${
               currentPage === 1
                 ? "bg-gray-200 text-gray-500 cursor-not-allowed"
                 : "bg-[#FFF9E5] text-[#000000] cursor-pointer"
@@ -95,24 +98,26 @@ const Shoppage = () => {
           </button>
 
           {/* Dynamically render page numbers */}
-          {Array.from({ length: totalPages }, (_, index) => index + 1).map((pageNumber) => (
-            <button
-              key={pageNumber}
-              onClick={() => handlePageClick(pageNumber)}
-              className={`px-4 py-2 rounded ${
-                currentPage === pageNumber
-                  ? "bg-[#000000] text-[#FFF9E5]" // Active page styling
-                  : "bg-[#FFF9E5] text-[#000000]"
-              }`}
-            >
-              {pageNumber}
-            </button>
-          ))}
+          {Array.from({ length: totalPages }, (_, index) => index + 1).map(
+            (pageNumber) => (
+              <button
+                key={pageNumber}
+                onClick={() => handlePageClick(pageNumber)}
+                className={`px-3 py-1 sm:px-4 sm:py-2 rounded ${
+                  currentPage === pageNumber
+                    ? "bg-[#000000] text-[#FFF9E5]" // Active page styling
+                    : "bg-[#FFF9E5] text-[#000000]"
+                }`}
+              >
+                {pageNumber}
+              </button>
+            )
+          )}
 
           {/* Next Button */}
           <button
             onClick={handleNextClick}
-            className={`px-4 py-2 rounded ${
+            className={`px-3 py-1 sm:px-4 sm:py-2 rounded ${
               currentPage === totalPages
                 ? "bg-gray-200 text-gray-500 cursor-not-allowed"
                 : "bg-[#FFF9E5] text-[#000000] cursor-pointer"
