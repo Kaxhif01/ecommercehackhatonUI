@@ -178,27 +178,27 @@ function page() {
             <div className="bg-transparent p-8">
               {/* Card */}
               <div className="space-y-4">
-                <div className="flex justify-between">
+                <div className="flex justify-between items-start max-sm:gap-5">
                   <h2 className="font-poppins font-medium text-2xl text-[#000000]">
                     Product
                   </h2>
-                  <h2 className="font-poppins font-medium text-2xl text-[#000000]">
+                  <h2 className="font-poppins font-medium text-2xl text-black  flex justify-start items-start ">
                     Subtotal
                   </h2>
                 </div>
                 <div className="flex justify-between">
-                  <p className="font-poppins text-lg text-[#9F9F9F]">
+                  <p className="font-poppins text-lg text-[#9F9F9F] max-sm:text-sm">
                     Asgaard sofa x 1
                   </p>
-                  <p className="font-poppins text-lg text-[#000000]">
+                  <p className="font-poppins text-lg text-[#000000] max-sm:text-sm">
                     Rs. 250,000.00
                   </p>
                 </div>
-                <div className="flex justify-between">
-                  <p className="font-poppins text-lg text-[#000000]">
+                <div className="flex justify-between ">
+                  <p className="font-poppins text-lg text-[#000000] max-sm:text-sm">
                     Subtotal
                   </p>
-                  <p className="font-poppins text-lg text-[#000000]">
+                  <p className="font-poppins text-lg text-[#000000] max-sm:text-sm" >
                     Rs. 250,000.00
                   </p>
                 </div>

@@ -10,26 +10,16 @@ function Banner({ pageTitle, breadcrumb }: BannerProps) {
   return (
     <div>
            <section
-  className="relative w-full h-[400px]  bg-no-repeat bg-center sm:h-[400px] md:h-[400px]"
+  className="relative w-full h-[400px]  bg-no-repeat bg-center sm:h-[400px] md:h-[400px] max-sm:h-[200px]"
   style={{ backgroundImage: "url('/images/banner.png')",
-    backgroundSize: '100%', // Stretches the image to cover the full width on small screens
+    backgroundSize: '250%', // Stretches the image to cover the full width on small screens
     backgroundPosition: 'center',
+    
    }} // Set banner bg image
 >
   <div className="absolute inset-0 bg-black bg-opacity-30 flex justify-center items-center flex-col">
     {/* Icon */}
     <img src="./images/icon.png" alt="Icon" className="mb-4" />
-
-
-
-
-
-
-
-
-
-
-
     {/* Shop Heading */}
     <h1 className="text-4xl font-poppins font-medium text-[#000000] mb-2">
       {pageTitle}

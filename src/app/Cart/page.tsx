@@ -27,20 +27,20 @@ const CartPage = () => {
           </div>
 
           {/* Cart Item Details */}
-          <div className="flex justify-between items-center mb-4 pt-8">
+          <div className="flex justify-between items-center mb-4 pt-8 o max-soverflow-x-scroll">
             {/* Product */}
             <div className="w-1/4 flex items-center justify-center">
               <img src="./images/Arrivals.png" alt="Asgaard sofa" className="w-16 h-16 mr-4" />
-              <span className="text-black font-poppins font-medium">Asgaard sofa</span>
+              <span className="text-black font-poppins font-medium max-sm:text-sm">Asgaard sofa</span>
             </div>
 
             {/* Price */}
             <div className="w-1/4 text-center">
-              <span className="text-black font-poppins text-xl">Rs. 250,000.00</span>
+              <span className="text-black font-poppins text-xl max-sm:text-sm">Rs. 250,000.00</span>
             </div>
 
             {/* Quantity */}
-            <div className="w-1/4 ml-4 flex justify-center text-center">
+            <div className="w-1/4 ml-4 flex justify-center text-center max-sm:w-6">
               <div className="bg-white border border-gray-300 rounded-md w-12 py-1">
                 <span className="text-black font-poppins">1</span>
               </div>
@@ -48,7 +48,7 @@ const CartPage = () => {
 
             {/* Subtotal */}
             <div className="w-1/4 text-center">
-              <span className="text-black font-poppins text-xl">Rs. 250,000.00</span>
+              <span className="text-black font-poppins text-xl max-sm:text-sm">Rs. 250,000.00</span>
             </div>
           </div>
         </div>
